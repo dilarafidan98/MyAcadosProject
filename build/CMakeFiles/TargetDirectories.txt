@@ -1,0 +1,3 @@
+/home/dilara/MyAcadosProject/build/CMakeFiles/MyAcadosProject.dir
+/home/dilara/MyAcadosProject/build/CMakeFiles/edit_cache.dir
+/home/dilara/MyAcadosProject/build/CMakeFiles/rebuild_cache.dir
