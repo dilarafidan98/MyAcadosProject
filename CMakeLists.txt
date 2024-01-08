@@ -1,49 +1,50 @@
 cmake_minimum_required(VERSION 3.10)
-project(MyAcadosProject)
+project(TestAcadosMPC)
 
 # Specify the C++ standard
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Path to the ACADOS installation
-set(ACADOS_PATH /home/dilara/acados)
+set(ACADOS_SOURCE_DIR "/home/dilara/acados")
 
-# Include directories for ACADOS, BLASFEO, and HPIPM
-include_directories(${ACADOS_PATH}/include)
-include_directories(${ACADOS_PATH}/external/blasfeo/include)
-include_directories(${ACADOS_PATH}/external/hpipm/include)
-include_directories(${PROJECT_SOURCE_DIR}/include)
-# Link directories for ACADOS, BLASFEO, and HPIPM
-link_directories(${ACADOS_PATH}/lib)
-link_directories(${ACADOS_PATH}/external/blasfeo/lib)
-link_directories(${ACADOS_PATH}/external/hpipm/lib)
+include_directories(
+  include
+  src/c_generated_code
+  $ENV{ACADOS_SOURCE_DIR}/include
+  $ENV{ACADOS_SOURCE_DIR}/include/acados
+  $ENV{ACADOS_SOURCE_DIR}/include/blasfeo/include
+  $ENV{ACADOS_SOURCE_DIR}/include/hpipm/include
+)
 
-add_executable(${PROJECT_NAME}
-        MyMPCTest.cpp # Main solver file used to interface with MPC controller
-    )
+find_library(ACADOS_LIB 
+  NAMES acados
+        hpipm
+        blasfeo
+  PATHS $ENV{ACADOS_SOURCE_DIR}/lib
+)
 
+file(GLOB_RECURSE GENERATED_C_CODE RELATIVE ${CMAKE_SOURCE_DIR} "src/c_generated_code/*.c")
+# Remove matlab dependency
+list(FILTER GENERATED_C_CODE EXCLUDE REGEX ".*sfunction.*\\.c$")
+list(FILTER GENERATED_C_CODE EXCLUDE REGEX ".*sim.*\\.c$")
 
-# Link libraries from the lib/ directory
-target_link_libraries(${PROJECT_NAME} lib/acados_sim_solver_quadcopter.o,
-                                      lib/acados_solver_quadcopter.o,
-                                      lib/libacados_ocp_solver_quadcopter.so,
-                                      lib/libacados_sim_solver_quadcopter.so,
-                                      lib/libacados_solver_quadcopter.so,
-                                      lib/main_quadcopter.o,
-                                      lib/main_sim_quadcopter.o,
-                                      lib/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.o,
-                                      lib/quadcopter_model/quadcopter_impl_dae_fun.o,
-                                      lib/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.o,
-                                      lib/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.o,
-                                      lib/quadcopter_cost/quadcopter_cost_y_0_fun.o,
-                                      lib/quadcopter_cost/quadcopter_cost_y_0_hess.o,
-                                      lib/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.o,
-                                      lib/quadcopter_cost/quadcopter_cost_y_e_fun.o,
-                                      lib/quadcopter_cost/quadcopter_cost_y_e_hess.o,
-                                      lib/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.o,
-                                      lib/quadcopter_cost/quadcopter_cost_y_fun.o,
-                                      lib/quadcopter_cost/quadcopter_cost_y_hess.o,
+add_library(${PROJECT_NAME}
+    src/mpc_test.cpp # Main solver file used to interface with MPC controller
+    ${GENERATED_C_CODE} # Generated c code
+)
+
+# build as an executable
+# add_executable(${PROJECT_NAME}
+#     src/mpc_test.cpp # Main solver file used to interface with MPC controller
+#     ${GENERATED_C_CODE} # Generated c code
+# )
+
+# Link the libraries
+target_link_libraries(${PROJECT_NAME} ${ACADOS_LIB}
 )
 
 
-# Link ACADOS, BLASFEO, and HPIPM to your project
-target_link_libraries(MyAcadosProject acados hpipm blasfeo)
+# install()
+# export(INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include LIBRARIES ${PROJECT_NAME} ${ACADOS_LIB})
+
+

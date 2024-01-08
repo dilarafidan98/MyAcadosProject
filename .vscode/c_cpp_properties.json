@@ -4,7 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/dilara/acados/include"
+                "/home/dilara/acados/include",
+                "/home/dilara/acados/include/blasfeo/include",
+                "/home/dilara/acados/include/hpipm/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

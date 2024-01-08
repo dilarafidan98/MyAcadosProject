@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Path to a library.
+ACADOS_LIB:FILEPATH=/home/dilara/acados/lib/libacados.so
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -148,7 +151,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=MyAcadosProject
+CMAKE_PROJECT_NAME:STATIC=TestAcadosMPC
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -216,13 +219,16 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-MyAcadosProject_BINARY_DIR:STATIC=/home/dilara/MyAcadosProject/build
+TestAcadosMPC_BINARY_DIR:STATIC=/home/dilara/MyAcadosProject/build
 
 //Value Computed by CMake
-MyAcadosProject_IS_TOP_LEVEL:STATIC=ON
+TestAcadosMPC_IS_TOP_LEVEL:STATIC=ON
+
+//Dependencies for the target
+TestAcadosMPC_LIB_DEPENDS:STATIC=general;/home/dilara/acados/lib/libacados.so;
 
 //Value Computed by CMake
-MyAcadosProject_SOURCE_DIR:STATIC=/home/dilara/MyAcadosProject
+TestAcadosMPC_SOURCE_DIR:STATIC=/home/dilara/MyAcadosProject
 
 
 ########################

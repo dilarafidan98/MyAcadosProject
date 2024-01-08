@@ -117,41 +117,425 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyAcadosProject
+# Target rules for targets named TestAcadosMPC
 
 # Build rule for target.
-MyAcadosProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyAcadosProject
-.PHONY : MyAcadosProject
+TestAcadosMPC: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TestAcadosMPC
+.PHONY : TestAcadosMPC
 
 # fast build rule for target.
-MyAcadosProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyAcadosProject.dir/build.make CMakeFiles/MyAcadosProject.dir/build
-.PHONY : MyAcadosProject/fast
+TestAcadosMPC/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/build
+.PHONY : TestAcadosMPC/fast
 
-MyMPCTest.o: MyMPCTest.cpp.o
-.PHONY : MyMPCTest.o
+src/c_generated_code/acados_solver_quadcopter.o: src/c_generated_code/acados_solver_quadcopter.c.o
+.PHONY : src/c_generated_code/acados_solver_quadcopter.o
 
 # target to build an object file
-MyMPCTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyAcadosProject.dir/build.make CMakeFiles/MyAcadosProject.dir/MyMPCTest.cpp.o
-.PHONY : MyMPCTest.cpp.o
+src/c_generated_code/acados_solver_quadcopter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/acados_solver_quadcopter.c.o
+.PHONY : src/c_generated_code/acados_solver_quadcopter.c.o
 
-MyMPCTest.i: MyMPCTest.cpp.i
-.PHONY : MyMPCTest.i
+src/c_generated_code/acados_solver_quadcopter.i: src/c_generated_code/acados_solver_quadcopter.c.i
+.PHONY : src/c_generated_code/acados_solver_quadcopter.i
 
 # target to preprocess a source file
-MyMPCTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyAcadosProject.dir/build.make CMakeFiles/MyAcadosProject.dir/MyMPCTest.cpp.i
-.PHONY : MyMPCTest.cpp.i
+src/c_generated_code/acados_solver_quadcopter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/acados_solver_quadcopter.c.i
+.PHONY : src/c_generated_code/acados_solver_quadcopter.c.i
 
-MyMPCTest.s: MyMPCTest.cpp.s
-.PHONY : MyMPCTest.s
+src/c_generated_code/acados_solver_quadcopter.s: src/c_generated_code/acados_solver_quadcopter.c.s
+.PHONY : src/c_generated_code/acados_solver_quadcopter.s
 
 # target to generate assembly for a file
-MyMPCTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyAcadosProject.dir/build.make CMakeFiles/MyAcadosProject.dir/MyMPCTest.cpp.s
-.PHONY : MyMPCTest.cpp.s
+src/c_generated_code/acados_solver_quadcopter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/acados_solver_quadcopter.c.s
+.PHONY : src/c_generated_code/acados_solver_quadcopter.c.s
+
+src/c_generated_code/main_quadcopter.o: src/c_generated_code/main_quadcopter.c.o
+.PHONY : src/c_generated_code/main_quadcopter.o
+
+# target to build an object file
+src/c_generated_code/main_quadcopter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/main_quadcopter.c.o
+.PHONY : src/c_generated_code/main_quadcopter.c.o
+
+src/c_generated_code/main_quadcopter.i: src/c_generated_code/main_quadcopter.c.i
+.PHONY : src/c_generated_code/main_quadcopter.i
+
+# target to preprocess a source file
+src/c_generated_code/main_quadcopter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/main_quadcopter.c.i
+.PHONY : src/c_generated_code/main_quadcopter.c.i
+
+src/c_generated_code/main_quadcopter.s: src/c_generated_code/main_quadcopter.c.s
+.PHONY : src/c_generated_code/main_quadcopter.s
+
+# target to generate assembly for a file
+src/c_generated_code/main_quadcopter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/main_quadcopter.c.s
+.PHONY : src/c_generated_code/main_quadcopter.c.s
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.o: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.c.o
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.i: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.c.i
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.s: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.c.s
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.o: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.c.o
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.i: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.c.i
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.s: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.c.s
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.o: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.c.o
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.i: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.c.i
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.s: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.c.s
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.o: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.c.o
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.i: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.c.i
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.s: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.c.s
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.o: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.c.o
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.i: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.c.i
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.s: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.c.s
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.o: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.c.o
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.i: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.c.i
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.s: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.c.s
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.o: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.c.o
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.i: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.c.i
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.s: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.c.s
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.o: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.c.o
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.i: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.c.i
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.s: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.c.s
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.o: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.c.o
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.c.o
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.i: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.c.i
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.c.i
+
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.s: src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.c.s
+.PHONY : src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.c.s
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.o: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.c.o
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.c.o
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.c.o
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.i: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.c.i
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.c.i
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.c.i
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.s: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.c.s
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.c.s
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.c.s
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.o: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.c.o
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.c.o
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.c.o
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.i: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.c.i
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.c.i
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.c.i
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.s: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.c.s
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.c.s
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.c.s
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.o: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.c.o
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.c.o
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.c.o
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.i: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.c.i
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.c.i
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.c.i
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.s: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.c.s
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.c.s
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.c.s
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.o: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.c.o
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.c.o
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.c.o
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.i: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.c.i
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.c.i
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.c.i
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.s: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.c.s
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.c.s
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.c.s
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.o: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.c.o
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.o
+
+# target to build an object file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.c.o
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.c.o
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.i: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.c.i
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.i
+
+# target to preprocess a source file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.c.i
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.c.i
+
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.s: src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.c.s
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.s
+
+# target to generate assembly for a file
+src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.c.s
+.PHONY : src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.c.s
+
+src/mpc_test.o: src/mpc_test.cpp.o
+.PHONY : src/mpc_test.o
+
+# target to build an object file
+src/mpc_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/mpc_test.cpp.o
+.PHONY : src/mpc_test.cpp.o
+
+src/mpc_test.i: src/mpc_test.cpp.i
+.PHONY : src/mpc_test.i
+
+# target to preprocess a source file
+src/mpc_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/mpc_test.cpp.i
+.PHONY : src/mpc_test.cpp.i
+
+src/mpc_test.s: src/mpc_test.cpp.s
+.PHONY : src/mpc_test.s
+
+# target to generate assembly for a file
+src/mpc_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestAcadosMPC.dir/build.make CMakeFiles/TestAcadosMPC.dir/src/mpc_test.cpp.s
+.PHONY : src/mpc_test.cpp.s
 
 # Help Target
 help:
@@ -161,10 +545,58 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MyAcadosProject"
-	@echo "... MyMPCTest.o"
-	@echo "... MyMPCTest.i"
-	@echo "... MyMPCTest.s"
+	@echo "... TestAcadosMPC"
+	@echo "... src/c_generated_code/acados_solver_quadcopter.o"
+	@echo "... src/c_generated_code/acados_solver_quadcopter.i"
+	@echo "... src/c_generated_code/acados_solver_quadcopter.s"
+	@echo "... src/c_generated_code/main_quadcopter.o"
+	@echo "... src/c_generated_code/main_quadcopter.i"
+	@echo "... src/c_generated_code/main_quadcopter.s"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.o"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.i"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun.s"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.o"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.i"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_fun_jac_ut_xt.s"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.o"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.i"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_0_hess.s"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.o"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.i"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun.s"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.o"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.i"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_fun_jac_ut_xt.s"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.o"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.i"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_e_hess.s"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.o"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.i"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun.s"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.o"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.i"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_fun_jac_ut_xt.s"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.o"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.i"
+	@echo "... src/c_generated_code/quadcopter_cost/quadcopter_cost_y_hess.s"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.o"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.i"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun.s"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.o"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.i"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u.s"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.o"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.i"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_u_z.s"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.o"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.i"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_fun_jac_x_xdot_z.s"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.o"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.i"
+	@echo "... src/c_generated_code/quadcopter_model/quadcopter_impl_dae_jac_x_xdot_u_z.s"
+	@echo "... src/mpc_test.o"
+	@echo "... src/mpc_test.i"
+	@echo "... src/mpc_test.s"
 .PHONY : help
 
 
