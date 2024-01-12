@@ -29,7 +29,11 @@ list(FILTER GENERATED_C_CODE EXCLUDE REGEX ".*sfunction.*\\.c$")
 list(FILTER GENERATED_C_CODE EXCLUDE REGEX ".*sim.*\\.c$")
 
 add_library(${PROJECT_NAME}
-    src/mpc_test.cpp # Main solver file used to interface with MPC controller
+    src/mpc_test.cpp
+    src/mpc_wrapper.cpp
+    src/mpc_rate_control.cpp
+     # Main solver file used to interface with MPC controller
+    
     ${GENERATED_C_CODE} # Generated c code
 )
 

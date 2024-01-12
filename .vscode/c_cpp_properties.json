@@ -6,7 +6,11 @@
                 "${workspaceFolder}/**",
                 "/home/dilara/acados/include",
                 "/home/dilara/acados/include/blasfeo/include",
-                "/home/dilara/acados/include/hpipm/include"
+                "/home/dilara/acados/include/hpipm/include",
+                "/home/dilara/acados",
+                "/home/dilara/acados/include/acados",
+                "/home/dilara/acados/include/acados_c",
+                "${workspaceFolder}/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
